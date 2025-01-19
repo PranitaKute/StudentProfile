@@ -1,0 +1,113 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.app-header {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; 
+}
+
+.app-header img {
+  max-width: 40%;
+  height: auto; 
+  display: inline-block;
+  border-radius: 5px; 
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+.app-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1rem;
+}
+
+.app-footer p {
+  margin: 0;
+}
+
+/* Form Styles */
+.form-container {
+  width: 100%; /* Adjusted width for more horizontal space */
+  max-width: 1000px; /* Increased the max width */
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.personal-details-form .form-group {
+  margin-bottom: 20px;
+}
+
+.personal-details-form label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.personal-details-form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.personal-details-form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.next-button {
+  background-color: #28a745; /* Green button */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-self: flex-start; /* Align to the left */
+}
+
+.next-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.submit-btn:active {
+  background-color: #1e7e34;
+  transform: translateY(0);
+}

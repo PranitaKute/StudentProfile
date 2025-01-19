@@ -1,0 +1,144 @@
+/* Educational Details Container */
+.educational-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+/* Form Header */
+.educational-details-container h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+  
+/* Form Group */
+.educational-details-form .form-group {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+  
+/* Form Group Header */
+.educational-details-form .form-group h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+  
+/* Labels */
+.educational-details-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+  
+/* Input Fields */
+.educational-details-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+  
+/* Flexbox Container for Result, Cleared Month, and Cleared Year */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Form Field inside Flex Container */
+.form-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+  
+/* Back Button */
+.back-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+    margin-right: 10px;
+}
+  
+.back-btn:hover {
+    background-color: #d32f2f;
+}
+  
+/* Submit Button */
+.submit-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+    margin-left: 10px;
+}
+  
+.submit-btn:hover {
+    background-color: #388e3c;
+}
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .educational-details-container {
+        padding: 15px;
+    }
+  
+    .educational-details-form .form-group h4 {
+        font-size: 1rem;
+    }
+  
+    .educational-details-form input {
+        font-size: 13px;
+    }
+  
+    .button-group {
+        flex-direction: column;
+    }
+  
+    .back-btn, .submit-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+        margin: 5px 0;
+        flex: unset;
+    }
+}
+
+

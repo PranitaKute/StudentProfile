@@ -1,0 +1,202 @@
+/* Style for the row */
+.row {
+  display: flex;
+  gap: 15px; /* Space between the fields */
+  margin-bottom: 20px; /* Space between rows */
+  align-items: stretch; /* Ensure all fields have the same height */
+}
+
+/* Style for individual fields within the row */
+.row .field {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Assign specific flex ratios */
+.row .field.name {
+  flex: 3;
+}
+
+.row .field.contact {
+  flex: 1;
+  
+}
+
+.row .field.age {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.row .field.admission-year,
+.row .field.admitted-to,
+.row .field.year-of-study,
+.row .field.prn,
+.row .field.department,
+.row .field.siblings,
+.row .field.school {
+  flex: 1;
+}
+
+.row .field.siblingsname {
+  flex: 4;
+}
+
+/* Label styling */
+.row .field label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  height: 20px; /* Uniform label height */
+  display: flex; /* Align vertically if needed */
+  align-items: center;
+}
+
+/* Input and select styling */
+.row .field input,
+.row .field select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 38px; /* Uniform height for inputs and selects */
+  box-sizing: border-box; /* Ensure padding is included in the total height */
+}
+
+/* Form container */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Personal details form */
+.personal-details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Reduces space between form elements */
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Space between label and input */
+  align-items: stretch; /* Stretch inputs to match height */
+  margin-top: -10px;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea,
+select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 38px; /* Uniform input height */
+  box-sizing: border-box; /* Ensure padding is included in the total height */
+}
+
+textarea {
+  resize: vertical;
+  height: auto; /* Allow resizing for text areas */
+}
+
+/* Button styles */
+button.submit-button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* To make sure there's no extra space */
+}
+
+button.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Fieldset */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+/* Select, input, and textarea */
+select, input, textarea {
+  width: 100%; /* Ensure inputs take up full width */
+}
+
+/* Parent Selection Section */
+.parent-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px; /* Space between options */
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between the radio button and the label */
+  font-size: 1em;
+  color: #333;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  accent-color: #5a645a; /* Custom color for radio buttons */
+}
+
+/* Styles specific to the Data component */
+.data-page .contact-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.data-page .country-code input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  cursor: not-allowed;
+  height: 38px; /* Uniform height */
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+.data-page .contact-number input {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  height: 38px; /* Uniform height */
+  width: 200px;
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
